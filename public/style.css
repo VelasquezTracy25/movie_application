@@ -1,0 +1,177 @@
+html, body {
+    Font-Family: 'Ruda', Sans-Serif;
+    height: 100%;
+    background-color: #020120;
+    /*background-color: white;*/
+    color: white;
+    /*color:#CF1C34;*/
+    /*text-shadow: 2px 2px 5px #FD98AC;*/
+}
+.nav {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color: black;}
+
+.navSpan{
+    margin-right:auto;}
+
+h1{
+    margin-left: 20px;}
+
+h2 {
+    text-align: left;
+    margin:20px 0 0px 20px;
+}
+
+.main-container {
+    position: relative;
+    text-align: center;
+
+}
+
+.star {
+    color: gray;
+}
+
+.star-active {
+    color: #3377FC;
+}
+
+.editStar {
+    color: gray;
+}
+
+.editStar-active {
+    color: #3377FC;
+}
+
+.trash-icon {
+    height: auto;
+    width: 30px;
+}
+.movie-info {
+    float: right;}
+
+ul {
+    list-style: none;
+    background-color: #90041F;
+}
+
+/*.card {*/
+/*margin-top:40px}*/
+
+/*Carousel*/
+.container {
+    display: flex;
+    padding-top:20px;
+    margin-left: 0px;
+    margin-right:0px;
+    margin-top: 10px;
+    margin-bottom:10px;
+    height: 258px;
+    width: 96vw;
+    overflow-x: auto;
+}
+
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0px;
+    background: transparent;
+}
+
+div.box {
+    /*background: #00C851;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1 1 0px;
+    transition: transform 300ms ease 100ms;
+    /*added */
+    min-height:182px;
+    min-width:130px;
+    max-height:182px;
+    max-width:130px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px 0 #3377FC, 0 6px 20px 0 #2032AB;
+}
+
+.container:hover .box {
+    transform: translateX(-25%);
+}
+
+.box:hover ~ .box {
+    transform: translateX(15%);
+}
+
+/*.container .box:hover {*/
+/*    transform: scale(1.2);*/
+/*}*/
+
+.cardbox {
+    position: relative;
+    width: 50%;
+}
+
+.cardimage {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.cardoverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #3377FC;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.cardbox:hover .cardoverlay {
+    width: 100%;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.bg-custom {
+    background-color: #B01434;
+}
+
+.card {
+    width: 40%;
+    display: flex;
+    background-color: #90041F;
+}
+
+.card {
+    width: 40%;
+    display: flex;
+    background-color: #90041F;
+}
+
+.list-group-flush {
+    background-color: #90041F;
+}
+
+.custom {
+    background-color: #B01434;
+}
+
+button.navbar-toggler {
+border: white;}
+
+div#general-movies.container {
+margin-right: 20px;}

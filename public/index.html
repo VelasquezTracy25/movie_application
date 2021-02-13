@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>My Application</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css"/>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" rel="stylesheet">
+</head>
+<body>
+<div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="custom p-4">
+            <ul class="card">
+                <div class="card-header"> <h2>Add A Movie!</h2></div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><input type="text" id="movieNameInput" placeholder="Enter Movie Title"></li>
+                    <li class="list-group-item"><input type="text" id="addMovieGenre" placeholder="Enter Genre"></li>
+                    <li class="list-group-item"><input type="text" id="addMovieYear" placeholder="Enter Year"></li>
+                    <li class="list-group-item"><label for="rating-hidden">How would you rate this movie?</label>
+                        <div class="stars">
+                            <form id="star-rating">
+                                <input id="rating-hidden" type="hidden">
+                                <span class="star" data-star="1">&#9733;</span>
+                                <span class="star" data-star="2">&#9733;</span>
+                                <span class="star" data-star="3">&#9733;</span>
+                                <span class="star" data-star="4">&#9733;</span>
+                                <span class="star" data-star="5">&#9733;</span>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+                <div class="card-footer text-muted">
+                    <button id="newMovieButton">Add Movie</button>
+                </div>
+            </ul>
+
+
+        <!-- EDIT A MOVIE CARD -->
+        <div class="card">
+            <div class="card-header">
+                <h2>Edit A Movie!</h2>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><input type="text" id="editMovieId" placeholder="Enter Movie ID"></li>
+                <li class="list-group-item"><input type="text" id="editMovieName" placeholder="Enter Movie Title"></li>
+                <li class="list-group-item"><input type="text" id="editMovieGenre" placeholder="Enter Genre"></li>
+                <li class="list-group-item"><input type="text" id="editMovieYear" placeholder="Enter Year"></li>
+                <li class="list-group-item"><label for="edit-rating-hidden">How would you rate this movie?</label>
+                    <div class="stars">
+                        <form id="edit-star-rating">
+                            <input id="edit-rating-hidden" type="hidden">
+                            <span class="editStar" data-edit-star="1">&#9733;</span>
+                            <span class="editStar" data-edit-star="2">&#9733;</span>
+                            <span class="editStar" data-edit-star="3">&#9733;</span>
+                            <span class="editStar" data-edit-star="4">&#9733;</span>
+                            <span class="editStar" data-edit-star="5">&#9733;</span>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+            <div class="card-footer text-muted">
+                <button id="editMovieButton">Edit Movie</button>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-custom bg-custom">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+</div>
+
+<div class="main-container">
+    <h2>General</h2>
+    <section class="products">
+        <div id="general-movies" class="container"></div>
+    </section>
+    <h2>Family Movies</h2>
+    <section class="products">
+        <div id="family-movies" class="container"></div>
+    </section>
+    <h2>Comedy</h2>
+    <section class="products">
+        <div id="comedy-movies" class="container"></div>
+    </section>
+    <h2>Horror/Suspense</h2>
+    <section class="products">
+        <div id="suspense-movies" class="container"></div>
+    </section>
+</div>
+
+
+<!-- BOOTSTRAP -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+<script src="keys.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>
